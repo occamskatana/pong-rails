@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DMX PONG</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 	'bootstrap' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'pong' %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="body">
+	<!-- <h3 id="you-lost">You Lost!!!</h3>
+	<h3 id="you-won">You Won!!!</h3>
+
+	<canvas id="canvas" width="700" height="350"> </canvas>
+
+
+		<div class="row" id="score-container">
+			<div class="col-xs-6">
+				<h3 align="center">CPU SCORE</h3><br>
+				<h2 id="cpu-score" align="center"></h2>
+			</div>
+			<div class="col-xs-6">
+				<h3 align="center">PLAYER SCORE</h3><br>
+				<h2 id="player-score" align="center"></h2>
+			</div>
+		</div> -->
+
+		<%= yield %>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+</html>
